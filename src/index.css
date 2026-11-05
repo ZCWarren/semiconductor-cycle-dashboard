@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --paper:oklch(0.956 0.009 135);
+  --paper-deep:oklch(0.916 0.013 135);
+  --ink:oklch(0.255 0.027 195);
+  --muted:oklch(0.48 0.018 175);
+  --line:oklch(0.84 0.016 150);
+  --red:oklch(0.53 0.13 32);
+  --green:oklch(0.43 0.07 165);
+  --amber:oklch(0.75 0.12 75);
+  --sans:"Noto Sans SC","Source Han Sans SC","Microsoft YaHei","PingFang SC",sans-serif;
+  --serif:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif;
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--paper);
+  font-synthesis:none;
+  text-rendering:optimizeLegibility;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;min-width:320px;min-height:100dvh;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.6}
+button,input,textarea,select{font-family:inherit}
+button{touch-action:manipulation}
+::selection{background:oklch(0.8 0.08 45);color:var(--ink)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
