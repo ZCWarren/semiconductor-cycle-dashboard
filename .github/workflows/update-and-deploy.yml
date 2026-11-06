@@ -1,6 +1,9 @@
 name: Update market data and deploy
 
 on:
+  push:
+    branches: [main]
+    paths-ignore: ['src/market.json']
   schedule:
     # 每月 5 日 11:17（Asia/Shanghai）更新；GitHub 定时任务可能延迟。
     - cron: '17 3 5 * *'
